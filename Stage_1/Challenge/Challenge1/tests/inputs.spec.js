@@ -3,12 +3,12 @@ import {test, expect} from '@playwright/test';
 test.describe('Feature: Validar localizadores en la pagina Inputs', () => {
 
     test('Escenario: Validar que el user puede ver Display Inputs fields en la pagina', async ({ page }) => {
-        //Step 1: Abrir la pagina Inputs
+        //Step 1: Abrir la pagina Inputs 
         await test.step('Abrir la pagina Inputs', async () => {
             await page.goto('https://practice.expandtesting.com/inputs');
         });
 
-        // Step 2: Validar que el user puede ver Display Inputs fields en la pagina
+        // Step 2: Validar que el user puede ver Display Inputs fields en la pagina inputs
         await test.step('"Localizar Display Inputs fields', async () => {
             const inputNumber = page.getByRole('spinbutton', { name: 'Input: Number' });
             const inputText = page.getByRole('textbox', { name: 'Input: Text' });
