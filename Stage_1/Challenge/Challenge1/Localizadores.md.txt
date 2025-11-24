@@ -1,0 +1,41 @@
+1 - https://practice.expandtesting.com/inputs
+
+		Nombre elemento // Accion que realiza // Tipo de localizador usado
+		Display inputs // Muestra 4 fields adicionales en la pantalla // getByRole()
+		Clear inputs // Remueve 4 fields agregados en la pantalla // getByRole()
+		Home // link que direcciona a Home // getByRole()
+
+2 - https://practice.expandtesting.com/login
+		Nombre elemento // Accion que realiza // Tipo de localizador usado
+		here // link que direcciona a register page // getByRole()
+		Username text field // campo para introducir 1 username // getByRole() 
+		Login button // boton que direcciona a la pagina secure // getByRole()	
+
+3 - https://practice.expandtesting.com/register
+		Nombre elemento // Accion que realiza // Tipo de localizador usado
+		Register button // boton que despliega 1 mensaje "Successfully registered, you can log in now"
+
+4 - https://practice.expandtesting.com/forgot-password
+		Nombre elemento // Accion que realiza // Tipo de localizador usado
+		E-mail field // campo para introducir 1 email // getByRole() 
+
+5 - https://practice.expandtesting.com/otp-login
+		Nombre elemento // Accion que realiza // Tipo de localizador usado
+		Heading "OTP Login page for Automation Testing Practice"// Texto fijo // getByText()	
+
+6 - https://practice.expandtesting.com/dynamic-table
+		Nombre elemento // Accion que realiza // Tipo de localizador usado	
+		Network column // Describe el titulo de 1 columna de la tabla dinamica Task Manager // getByText() 
+
+7 - https://practice.expandtesting.com/dynamic-pagination-table
+		Nombre elemento // Accion que realiza // Tipo de localizador usado
+		Pagination button 2 // Despliega contenido de la tabla de la segunda parte // getByRole() 
+
+8 - https://practice.expandtesting.com/locators
+		Nombre elemento // Accion que realiza // Tipo de localizador usado
+		Contact link //  link que direcciona a Contact Page // getByRole()
+		
+9 - https://practice.expandtesting.com/my-browser
+		Show Browser Information // Despliega 1 tabla // getByRole()
+
+		
