@@ -1,0 +1,15 @@
+{
+  "validUser": {
+    "firstName": "Ana",
+    "lastName": "Perez",
+    "email": "auto-generate",
+    "password": "Password123!"
+  },
+  "anotherUser": {
+    "firstName": "Carlos",
+    "lastName": "Lopez",
+    "email": "auto-generate",
+    "password": "Password123!"
+    
+  }
+}
