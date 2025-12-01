@@ -1,4 +1,4 @@
-import { test } from '@playwright/test';
+import test from '@playwright/test';
 import HomePage from '../pages/HomePage.js';
 import ProductPage from '../pages/ProductPage.js';
 
@@ -11,8 +11,8 @@ test('Buscar un producto desde home', async ({ page }) => {
     await homePage.goto();
 
     // 2. Buscar un producto
-    await homePage.search('dress');
+    await homePage.search('sweater');
 
     // 3. Seleccionar el producto encontrado
-    await productPage.selectProduct('Printed Dress');
+    await productPage.selectProduct('sweater');
 });

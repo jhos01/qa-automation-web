@@ -1,19 +1,21 @@
-import { expect } from '@playwright/test';
+import test from '@playwright/test';
+import users from '../data/users.json' assert { type: 'json' };
 
 class LoginPage {
 
     constructor(page) {
         this.page = page;
 
-        // Campos del login (reales)
-        this.emailInput = page.locator('#email');
-        this.passwordInput = page.locator('#passwd');
-
-        // Botón real de login
-        this.loginBtn = page.locator('#SubmitLogin');
-
+        // Campos del login
+        this.emailInput = page.locator('input[name="email"]').first();
+        this.passwordInput = page.locator('input[name="password"]');
+        // Botón Sign In
+        this.SignInButton = page.getByRole('button', { name: 'SIGN IN' });
+        //Link Create a new account
+        this.createAccountLink = page.getByRole('link', { name: 'No account? Create one here' });
+        
         // Texto que aparece tras login exitoso
-        this.welcomeText = page.locator('.info-account');
+        this.YourAccountHeading = page.getByRole('heading', { name: 'Your Account' });
     }
 
     // Abre la página real de login
@@ -21,17 +23,17 @@ class LoginPage {
         await this.page.goto('http://www.testingyes.com/onlineshop/login');
     }
 
-    // Completa el login real
     async login(user) {
         await this.emailInput.fill(user.email);
         await this.passwordInput.fill(user.password);
-        await this.loginBtn.click();
+        await this.SignInButton.click();
     }
 
     // Validación real del login
     async expectLoginSuccess() {
-        await expect(this.welcomeText).toBeVisible();
+        await expect(this.YourAccountHeading).toBeVisible();
     }
-}
 
+}
 export default LoginPage;
+

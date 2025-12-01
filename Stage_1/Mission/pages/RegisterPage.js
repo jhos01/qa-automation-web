@@ -6,16 +6,16 @@ class RegisterPage {
         this.page = page;
 
         // Campos reales del formulario (verificados en la web)
-        this.firstName = page.locator('#customer_firstname');
-        this.lastName = page.locator('#customer_lastname');
-        this.email = page.locator('#email');
-        this.password = page.locator('#passwd');
-
+        this.firstName = page.locator('input[name = "firstname"]');
+        this.lastName = page.locator('input[name = "lastname"]');
+        this.email = page.locator('input[name = "email"]').first();
+        this.password = page.getByRole('textbox', { name: 'At least 5 characters long' });
+        this.birthDate = page.getByRole('textbox', { name: 'MM/DD/YYYY' });
+        //Checkbox de "I agree to the terms.."
+        this.IAgreeCheckbox = page.locator('input[name = "psgdpr"]');
         // Botón real de registro
-        this.registerBtn = page.locator('button[name="submitAccount"]');
-
-        // Mensaje real de éxito
-        this.confirmMessage = page.locator('.info-account');
+        this.SaveButton = page.getByRole('button', { name: 'Save' });
+        this.signOutLink = page.getByRole('link', { name: 'Sign out' });
     }
 
     // Abre la página real de registro
@@ -29,22 +29,22 @@ class RegisterPage {
         await this.lastName.fill(user.lastName);
         await this.email.fill(user.email);
         await this.password.fill(user.password);
+        await this.birthDate.fill(user.birthDate);
+    }
+
+    //Selecciona el checkbox de "I agree to the terms.."
+    async agreeToTerms() {
+        await this.IAgreeCheckbox.check();
     }
 
     // Hace click en el botón de registro
     async submit() {
-        await this.registerBtn.click();
-    }
-
-    // Flujo completo
-    async register(user) {
-        await this.fillForm(user);
-        await this.submit();
+        await this.SaveButton.click();
     }
 
     // Validación final
     async expectSuccess() {
-        await expect(this.confirmMessage).toBeVisible();
+        await expect(this.signOutLink).toBeVisible();
     }
 }
 

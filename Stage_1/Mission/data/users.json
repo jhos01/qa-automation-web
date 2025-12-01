@@ -1,15 +1,21 @@
 {
   "validUser": {
-    "firstName": "Ana",
-    "lastName": "Perez",
-    "email": "auto-generate",
-    "password": "Password123!"
+    "firstName": "Brandon",
+    "lastName": "Luiss",
+    "email": "brandonlop@email.com",
+    "password": "demian2PASSWORD",
+    "state": "California",
+    "country": "United States",
+    "birthDate": "1990-05-15"
+
   },
   "anotherUser": {
     "firstName": "Carlos",
     "lastName": "Lopez",
     "email": "auto-generate",
-    "password": "Password123!"
+    "password": "Password123!",
+    "state": "New York",
+    "country": "United States"
     
   }
 }

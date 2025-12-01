@@ -1,61 +1,58 @@
-import { test } from '@playwright/test';
-
+import test from '@playwright/test';
 import HomePage from '../pages/HomePage.js';
 import RegisterPage from '../pages/RegisterPage.js';
 import ProductPage from '../pages/ProductPage.js';
 import CartPage from '../pages/CartPage.js';
 import CheckoutPage from '../pages/CheckOutPage.js';
-
+import LoginPage from '../pages/LoginPage.js';
+import CompleteCheckOutInformation from '../pages/CompleteCheckOutInformation.js';
 import users from '../data/users.json' assert { type: 'json' };
+import SearchResultsPage from '../pages/SearchResultsPage.js';
 
 test('Flujo completo: registro de usuario y compra exitosa', async ({ page }) => {
 
     const home = new HomePage(page);
+    const login = new LoginPage(page);
+    const searchResult  = new SearchResultsPage(page);
     const register = new RegisterPage(page);
     const product = new ProductPage(page);
     const cart = new CartPage(page);
     const checkout = new CheckoutPage(page);
+    const checkoutInfo = new CompleteCheckOutInformation(page);
 
-    // 1. Entrar al home
+    // 1. Ingresar a la página principal
     await home.goto();
 
-    // 2. Ir a login y luego a crear cuenta
-    await home.goToLogin();
-    await register.navigate(); // URL con create_account=1
+    // 2. Seleccionar Sign In para crear cuenta
+    await home.signInPage();
 
-    // 3. Registrar usuario nuevo
-    await register.register(users.validUser);
+    //4. Seleccionar link Create a new account
+    await login.createAccountLink.click();
 
-    // 4. Verificar creación exitosa de cuenta
+    // 5. Registrar usuario nuevo
+    await register.fillForm(users.validUser);
+    await register.agreeToTerms();
+    await register.submit();
+    // 6. Verificar creación exitosa de cuenta
     await register.expectSuccess();
 
-    // 5. Buscar un producto
-    await home.search('dress');
+    // 7. Buscar un producto
+    await searchResult.searchProduct('sweater');
 
-    // 6. Seleccionar un producto exacto
-    await product.selectProduct('Printed Dress');
+    // 8. Seleccionar el producto buscado y agregarlo al carrito
+    await searchResult.selectProduct('sweater');
 
-    // 7. Agregar al carrito
+    // 9. Seleccionar Add to Cart
     await product.addToCart();
 
-    // 8. Continuar desde el modal
-    await cart.proceedFromModal();
+    // 10. Seleccionar Proceed to checkout
+    await cart.proceedToCheckOut();
 
-    // 9. Continuar desde el resumen del carrito (summary)
-    await cart.proceedFromSummary();
+    // 11. Seleccionar Proceed to checkout again 
+    await checkout.proceedToCheckOut();
 
-    // 10. Continuar desde la página de dirección (address)
-    await checkout.proceedFromAddress();
-
-    // 11. Aceptar términos y continuar desde envío (shipping)
-    await checkout.acceptTermsAndProceed();
-
-    // 12. Seleccionar método de pago
-    await checkout.choosePaymentMethod();
-
-    // 13. Confirmar la orden
-    await checkout.confirmOrder();
-
-    // 14. Validar mensaje final de éxito
-    await checkout.expectOrderSuccess();
+    // 12. Completar información de checkout
+    await checkoutInfo.fillAddressForm(users.validUser);
+    await checkoutInfo.fillShippingMethod();
+    await checkoutInfo.fillPaymentMethod('wire');
 });

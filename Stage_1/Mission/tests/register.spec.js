@@ -1,4 +1,4 @@
-import { test } from '@playwright/test';
+import test from '@playwright/test';
 import RegisterPage from '../pages/RegisterPage.js';
 import users from '../data/users.json' assert { type: 'json' };
 

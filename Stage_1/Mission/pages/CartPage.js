@@ -4,20 +4,12 @@ class CartPage {
         this.page = page;
 
         // Botón del modal tras agregar un producto al carrito
-        this.modalCheckoutBtn = page.locator('#layer_cart a.btn[title="Proceed to checkout"]');
-
-        // Botón "Proceed to checkout" en el carrito (summary)
-        this.summaryCheckoutBtn = page.locator('a.button.btn.btn-default.standard-checkout');
+        this.modalCheckoutButton = page.getByRole('link', { name: 'PROCEED TO CHECKOUT' });
     }
 
     // Desde el modal
-    async proceedFromModal() {
-        await this.modalCheckoutBtn.click();
-    }
-
-    // Desde la página del carrito (summary)
-    async proceedFromSummary() {
-        await this.summaryCheckoutBtn.click();
+    async proceedToCheckOut() {
+        await this.modalCheckoutButton.click();
     }
 }
 

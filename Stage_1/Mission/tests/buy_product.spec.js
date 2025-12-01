@@ -1,4 +1,4 @@
-import { test } from '@playwright/test';
+import test from '@playwright/test';
 import HomePage from '../pages/HomePage.js';
 import ProductPage from '../pages/ProductPage.js';
 import CartPage from '../pages/CartPage.js';
