@@ -1,0 +1,34 @@
+#Localizadores necesarios para completer flujo de compra end-to-end
+##HomePage
+button | Sign in
+Field | Search our Catalog
+Button | Magnifying Glass icon
+##LoginPage
+link | Click on No account?
+##Register
+Field | Firstname
+Field | Lastname
+Field | email
+Field | password
+Field | birthdate
+Button | Save 
+##SearchResultPage
+Art | ProductImage
+##ProductPage
+Button | Add to cart
+##CartPage
+Button | ProceedToCheckOut
+##CompleteCheckOutInformation
+Field | Firstname
+Field | Lastname
+Field | Company
+Field | Address
+Checkbox | Use this address
+Button | Continue
+Button | Continue
+Button | Continue
+Radio Button | Wire/Check
+Button | Order with an obligation to pay
+
+
+

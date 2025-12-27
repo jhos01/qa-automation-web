@@ -1,0 +1,10 @@
+#Shadow locators
+h1 | Shadow DOM
+P | Hello Shadow DOM
+
+#IFrame
+const locateFrame = page.framelocator("#my-iframe")
+
+#PopUp
+
+const popUpView = page
