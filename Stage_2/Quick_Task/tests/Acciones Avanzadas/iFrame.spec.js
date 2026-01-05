@@ -5,8 +5,6 @@ test.describe('Scenario: Interactuar con elementos de un Iframe', () => {
         const frameLocator = page.frameLocator('iframe[src = MultipleFrames.html]');
         frameLocator.getByRole('heading', { name: '= iFrame Demo' })
         expect(frameLocator).not.toBeNull();
-
-        
     })
     
     

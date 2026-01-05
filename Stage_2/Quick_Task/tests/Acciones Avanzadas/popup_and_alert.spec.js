@@ -9,8 +9,7 @@ test.describe('Feature: popup and alert', () => {
             await dialog.accept();
 
         });
-        await page.getByRole('button', { name: 'Launch alert' }).click();
-
+        await page.getByRole('button', { name: 'Launch alert' }).click()
         
     });
 
