@@ -50,16 +50,14 @@ test.describe('Student Registration Form', () => {
     await page.fill('#currentAddress', '123 Main Street, CityXYZ');
 
     // Select State and City from custom dropdowns
-    const stateArrowIcon = page.locator('.css-tlfecz-indicatorContainer').nth(1);
-    await stateArrowIcon.click();
-    const stateOptionSelected = page.locator('.css-1uccc91-singleValue').nth(0);
-    await stateOptionSelected.click();
+    //const stateArrowIcon = page.locator('.css-tlfecz-indicatorContainer').nth(1);
+    const stateDropdown = page.locator('#state');
+    await stateDropdown.click();
+    await page.getByText('Rajasthan').click();
 
-
-    const cityArrowIcon = page.locator('.css-tlfecz-indicatorContainer').nth(2);
-    await cityArrowIcon.click();
-    const cityOptionSelected = page.locator('.css-1uccc91-singleValue').nth(1);
-    await cityOptionSelected.click();
+    const cityDropdown = page.locator('#city');
+    await cityDropdown.click();
+    await page.getByText('Jaiselmer').click();
 
     // Enviar formulario
     await page.click('#submit');
@@ -75,10 +73,24 @@ test.describe('Student Registration Form', () => {
     await expect(modal.locator('td:has-text("15 May,1990")')).toBeVisible();
     await expect(modal.locator('td:has-text("Maths, Physics")')).toBeVisible();
     await expect(modal.locator('td:has-text("Sports, Reading")')).toBeVisible();
-    await expect(modal.locator('td:has-text("NCR Noida")')).toBeVisible();
+    await expect(modal.locator('td:has-text("Rajasthan Jaiselmer")')).toBeVisible();
 
     // Cerrar modal
-    await page.click('#closeLargeModal');
+    //const closeButton = page.locator('#closeLargeModal');
+    //await expect(closeButton).toBeVisible();
+    //await closeButton.click();
+
+    const closeButton = page.locator('#closeLargeModal');
+    await closeButton.scrollIntoViewIfNeeded(); // 👈 mueve el botón visible al viewport
+    await expect(closeButton).toBeVisible();    // asegura que sea el correcto
+    await closeButton.click();
+
+
+
+
+
+
+
   });
 
 });
