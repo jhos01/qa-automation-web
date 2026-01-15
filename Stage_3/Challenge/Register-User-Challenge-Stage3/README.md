@@ -1,8 +1,14 @@
-# 🧪 QAXpert – Playwright Automation Project
+# 🧪 Playwright Automation Project: Register form
 
-Este proyecto contiene pruebas automatizadas con Playwright usando JavaScript y el Playwright Test Runner, siguiendo buenas prácticas como estructura por tests y reutilización de utilidades.
+Este proyecto contiene pruebas automatizadas con Playwright usando JavaScript y el Playwright Test Runner, siguiendo buenas prácticas como el uso de Page Object Model como patron de diseño y assertions
 
-----
+## 📦 Escenarios automatizados
+
+**El proyecto contiene 4 escenarios de prueba automatizados dentro del test accessform.spec.js:**
+- El usuario puede llenar el formulario "Register" satisfactoriamente completando todos los campos obligatorios con valores validos
+- El usuario no puede enviar el formulario si Password y Confirm Password fields no coinciden
+- El usuario no puede enviar el formulario si mas de 1 campo obligatorio esta incompleto(Ejemplo: Last Name)
+- El usuario no puede enviar el formulario vacio
 
 ## 📦 Package – ¿para qué sirve?
 
@@ -16,19 +22,6 @@ Playwright necesita dos pasos:
 2.	Instalar los navegadores (Playwright)
 
 ----
-
-## ▶️ Scripts disponibles
-
-```json
-"scripts": {
-  "test": "playwright test",
-  "install:browsers": "playwright install",
-  "test:ui": "playwright test --ui",
-  "test:headed": "playwright test --headed"
-}
-```
-
-### 📖 ¿Qué hace cada script?
 
 ## ▶️ Scripts disponibles
 
@@ -76,7 +69,7 @@ npm run show:report
 ----
 ## 👨‍💻 Autor
 
-Luis Carlos Marín Campos - Mentor QAX
+Jhoselin Luizaga - Trainee
 
 
 ----
