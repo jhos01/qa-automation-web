@@ -28,17 +28,13 @@ test('Validación de imágenes y enlaces - Broken Page', async ({ page, request 
             validLink.click()
         ]);
         await expect(page).toHaveURL('https://demoqa.com/');
-        await page.goto('https://demoqa.com/broken');
-
-        
+        await page.goto('https://demoqa.com/broken');       
     })
     await test.step('Validate broken link', async () => {
         const brokenLinkUrl = 'http://the-internet.herokuapp.com/status_codes/500';
         const response = await request.get(brokenLinkUrl);
         expect(response.status()).toBeGreaterThanOrEqual(400);
-    });
-
-        
+    }); 
 });
     
 
