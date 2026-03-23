@@ -8,9 +8,23 @@ El repositorio contiene proyectos de automatizacion de pruebas Web utilizando Pl
 
 ## 🎯 Proyectos
 
-Stage 1
-Stage 2
-Stage 3
+Stage 1: Fudamentos de Web Automation con Playwright
+
+- Quick Task
+- Challenge 1&2: Automatización de pruebas web sobre el formulario de registro de Demo Automation Testing
+- Mission: Automatizacion de pruebas web para la pagina DemoQA
+
+Stage 2: Dominio de localizadores y acciones avanzadas
+
+- Quick Task
+- Challenge 1&2:
+- Mission:
+  
+Stage 3: Framwork de Automatizacion Completo
+
+- Quick Task
+- Challenge 1&2
+- Mission
 
 
 
