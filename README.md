@@ -1,24 +1,18 @@
-<p align="center">
-  <img src="assets/qax-logo.png" alt="QAX Logo"/>
-</p>
+# Portafolio de Automatización de Pruebas Web - Jhoselin Luizaga
+El repositorio contiene proyectos de automatizacion de pruebas Web utilizando Playwright. Cada uno de ellos fueron desarrollados como parte de la mentoria QA ProLevel de QAX. 
 
-# Proyecto Modelo para realizar las entregas 
+# Tecnologias utilizadas
+- Lenguaje: Javascript
+- Frameworks de automatizacion: Playwright
+- Herramientas adicionales: Maven
 
-![QAX](https://img.shields.io/badge/QAX-Mentorias-orange?style=for-the-badge&logo=github)
-![QA Pro Level](https://img.shields.io/badge/QA-ProLevel-blueviolet?style=for-the-badge&logo=target)
+## 🎯 Proyectos
+
+Stage 1
+Stage 2
+Stage 3
 
 
-
-# Guía Detallada: Tu Portafolio de Automatización Profesional 
-
-Este documento es tu manual para utilizar la plantilla de repositorio de QAX. 
-El objetivo es que construyas un portafolio de proyectos de automatización de API que sea ordenado, profesional y que demuestre tus capacidades técnicas a futuros empleadores. 
-
-## 🎯 1. Propósito: ¿Por Qué Usar esta Plantilla?
-
-- **Organización Total:** Tendrás un lugar central y ordenado para cada una de tus entregas del programa (Stages), evitando archivos sueltos o desordenados. 
-- **Consistencia Profesional:** La estructura es la misma para proyectos de API, Web o Mobile, lo que demuestra que sabes mantener un estándar de trabajo.
-- **Portafolio de Impacto:** En lugar de solo decir que sabes automatizar, podrás mostrar tu código, tu lógica y tu forma de trabajar directamente desde tu perfil de GitHub. 
 
 ## 🧱 2. Estructura del Repositorio: ¿Dónde Va Cada Cosa? 
 
