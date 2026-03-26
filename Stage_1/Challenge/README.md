@@ -71,9 +71,16 @@ para comprobar que la interfaz responde correctamente y que los localizadores de
 
 ---
 
-## Ejecución (comandos o pasos)
-
-### Instalación
+### Ejecución (comandos o pasos)
 ```bash
-npm install
-npx playwright install
+npx playwright test
+npx playwright test --headed
+```
+
+### Visualizacion el reporte HTML
+
+```bash
+npx playwright show-report
+
+
+
