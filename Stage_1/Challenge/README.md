@@ -1,6 +1,4 @@
-# Challenge1
-
-## Automatización web con Playwright para la pagina `practice.expandtesting.com`
+# Challenge 1 - Automatización web con Playwright para la pagina `practice.expandtesting.com`
 
 ## Objetivo / Historia de usuario
 
