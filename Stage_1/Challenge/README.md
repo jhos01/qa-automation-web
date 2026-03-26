@@ -77,7 +77,7 @@ npx playwright test
 npx playwright test --headed
 ```
 
-### Visualizacion el reporte HTML
+### Visualizacion del reporte HTML
 
 ```bash
 npx playwright show-report
