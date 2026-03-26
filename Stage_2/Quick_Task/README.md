@@ -1,9 +1,9 @@
-# Quick Task - Automatizacoin de localizadores y acciones avanzadas para la pagina web testingyes usando Playwright
+# Quick Task - Automatizacion de 1 flujo de compra End-To-End para la pagina web testingyes usando Playwright
 
 ## Objetivo / Historia de usuario
 
 ### Objetivo
-Demostrar el primer avance en automatización web con **Playwright**, documentando localizadores clave y automatizando acciones avanzadas de interacción sobre distintas páginas de práctica.
+Demostrar el primer avance en automatización web con **Playwright**, documentando localizadores clave y automatizando acciones avanzadas de interacción con elementos de la pagina [http://www.testingyes.com/onlineshop/]
 
 ### Historia de usuario
 Como **QA Automation Tester**,  
