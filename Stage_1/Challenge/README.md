@@ -1,7 +1,6 @@
-# Stage_1 / Challenge / Challenge1
+# Challenge1
 
-## Título de la entrega
-Challenge 1 - Automatización web con Playwright sobre `practice.expandtesting.com`
+## Automatización web con Playwright sobre `practice.expandtesting.com`
 
 ---
 
