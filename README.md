@@ -12,19 +12,20 @@ Stage 1: Fudamentos de Web Automation con Playwright
 
 - Quick Task
 - Challenge 1&2: Automatización de pruebas web sobre el formulario de registro de Demo Automation Testing
-- Mission: Automatizacion de pruebas web para la pagina DemoQA
+- Mission: Automatizacion de pruebas web para la pagina TestingYes (tienda virtual)
 
 Stage 2: Dominio de localizadores y acciones avanzadas
 
-- Quick Task
-- Challenge 1&2:
-- Mission:
+- Quick Task: Localizacion de elementos para la pagina TestingYes (tienda virtual)
+- Challenge 1: Llenado de 1 nuevo registro para un formulario de la pagina Demo Automation Testing
+- Challenge 2: Automatizacion de diferentes acciones avanzadas en web para la pagina Demo Automation Testing
+- Mission: Automatizacion de 1 flujo End-To-End para la pagina DemoQA
   
 Stage 3: Framwork de Automatizacion Completo
 
-- Quick Task
-- Challenge 1&2
-- Mission
+- Quick Task: Aplicacion de Asersiones para la pagina DemoQA
+- Challenge 1&2: 
+- Mission: 
 
 
 
