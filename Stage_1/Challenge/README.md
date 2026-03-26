@@ -2,8 +2,6 @@
 
 ## Automatización web con Playwright para la pagina `practice.expandtesting.com`
 
----
-
 ## Objetivo / Historia de usuario
 
 ### Objetivo
