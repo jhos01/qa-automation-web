@@ -1,7 +1,7 @@
-#Casos de Prueba
+# Casos de Prueba
 
-##Caso de Prueba #1 - El usuario no puede llenar el formulario si deja firstname y lastname como campos vacios
+## Caso de Prueba #1 - El usuario no puede llenar el formulario si deja firstname y lastname como campos vacios
 
-##Caso de Prueba #2 - El usuario no puede llenar el formulario si ingresa un email invalido (sin @)
+## Caso de Prueba #2 - El usuario no puede llenar el formulario si ingresa un email invalido (sin @)
 
-##Caso de Prueba #3 - El usuario no puede enviar el formulario si hay 1 mismatch de passowrds
+## Caso de Prueba #3 - El usuario no puede enviar el formulario si hay 1 mismatch de passowrds
