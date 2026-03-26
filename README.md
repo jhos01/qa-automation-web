@@ -6,7 +6,7 @@ El repositorio contiene proyectos de automatizacion de pruebas Web utilizando Pl
 - Frameworks de automatizacion: Playwright
 - Herramientas adicionales: Maven
 
-## 🎯 Proyectos
+# 🎯 Proyectos
 
 Stage 1: Fudamentos de Web Automation con Playwright
 
@@ -29,7 +29,7 @@ Stage 3: Framwork de Automatizacion Completo
 
 
 
-## Contacto
+# Contacto
 - **LinkedIn:** [www.linkedin.com/in/jhoselin-luizaga]
 - **Email:** jluizagarodriguez@gmail.com
 - **Github:** Jhoselin Luizaga (jhos01)
