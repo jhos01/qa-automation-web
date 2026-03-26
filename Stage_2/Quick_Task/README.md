@@ -1,9 +1,4 @@
-# Quick Task - Playwright
-
-## Título de la entrega
-Automatización de localizadores y acciones avanzadas con Playwright
-
----
+# Quick Task - Automatizacoin de localizadores y acciones avanzadas para la pagina web testingyes usando Playwright
 
 ## Objetivo / Historia de usuario
 
