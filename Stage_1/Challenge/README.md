@@ -15,3 +15,4 @@ Breve ejercicio de escenarios de complejidad media con criterios claros. Forma p
 - 🧪 Código/archivos de soporte en subcarpetas (`src`, `tests`, `resources`, etc.) según la tecnología.
 - 🖼️ Evidencias en `evidencias/` cuando aplique.
 
+4
