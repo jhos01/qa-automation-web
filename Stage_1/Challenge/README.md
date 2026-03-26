@@ -8,7 +8,7 @@ Challenge 1 - Automatización web con Playwright sobre `practice.expandtesting.c
 ## Objetivo / Historia de usuario
 
 ### Objetivo
-Automatizar pruebas funcionales básicas y validaciones de localizadores web usando **Playwright**, verificando visibilidad de elementos, navegación, interacción con botones, links, campos de entrada y validaciones de contenido en distintas páginas del sitio `practice.expandtesting.com`.
+Automatizar pruebas funcionales básicas y validaciones de localizadores web usando **Playwright**, verificando visibilidad de elementos, navegación, interacción con botones, links, campos de entrada y validaciones de contenido en distintas páginas del sitio (practice.expandtesting.com)[https://practice.expandtesting.com/]
 
 ### Historia de usuario
 Como **QA Automation Tester**,  
