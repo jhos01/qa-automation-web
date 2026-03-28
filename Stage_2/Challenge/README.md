@@ -1,4 +1,4 @@
-# 🚀 QA Automation Challenges 01 % 02 - Automatizacion de pruebas web usando Playwright
+# 🚀 QA Automation Challenges 01 & 02 - Automatizacion de pruebas web usando Playwright
 
 Este repositorio contiene la implementación de dos retos de automatización enfocados en evolucionar desde pruebas básicas hacia una **suite robusta, escalable y profesional**, utilizando Playwright y buenas prácticas de ingeniería de calidad.
 
