@@ -87,38 +87,11 @@ Automatización de interacciones avanzadas como:
 
 ---
 
-## 🎯 Enfoque General del Proyecto
-
-Este repositorio demuestra:
-
-- Evolución de pruebas básicas a automatización profesional
-- Aplicación de buenas prácticas de QA Automation
-- Diseño de pruebas mantenibles y escalables
-- Cobertura funcional sobre múltiples componentes web
-
----
-
 ## 🧠 Conceptos Clave Aplicados
 
 - Page Object Model (POM)
-- Separación de responsabilidades
-- Reutilización de código
 - Data-driven testing
 - Validaciones robustas (assertions)
 - Manejo de elementos dinámicos
 
 ---
-
-## 📌 Conclusión
-
-Estos challenges representan un enfoque práctico de cómo un QA evoluciona hacia un **SDET**, aplicando:
-
-- Pensamiento crítico
-- Diseño de pruebas efectivo
-- Automatización de nivel profesional
-
----
-
-## 👨‍💻 Autor
-
-QA Automation Engineer | SDET 🚀
