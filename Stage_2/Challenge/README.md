@@ -1,175 +1,124 @@
+# 🚀 QA Automation Challenges 01 % 02 - Automatizacion de pruebas web usando Playwright
 
-# 🚀 Challenge 01 - Aumentando la Cobertura de Pruebas
-
-Este proyecto implementa pruebas automatizadas utilizando Playwright aplicando el patrón Page Object Model (POM) para garantizar escalabilidad, mantenibilidad y claridad en los tests.
-
-El objetivo es evolucionar de scripts básicos a una automatización profesional, basada en buenas prácticas utilizadas en proyectos reales de QA.
+Este repositorio contiene la implementación de dos retos de automatización enfocados en evolucionar desde pruebas básicas hacia una **suite robusta, escalable y profesional**, utilizando Playwright y buenas prácticas de ingeniería de calidad.
 
 ---
 
-## 📌 Objetivo del Challenge
+## 🧰 Tecnologías Utilizadas
 
-Transformar escenarios funcionales en pruebas automatizadas:
-
-- ✅ Claras y legibles
-- ✅ Reutilizables (sin duplicación de código)
-- ✅ Mantenibles mediante POM
-- ✅ Ejecutables desde consola
-- ✅ Con reportes automatizados
-
----
-
-## 🌐 Aplicación Bajo Prueba
-
-🔗 https://demo.automationtesting.in/Index.html
+- Playwright
+- JavaScript / Node.js
+- Page Object Model (POM)
+- Gherkin (BDD)
+- HTML Reports (Playwright)
+- Git / GitHub
 
 ---
 
-## 🧪 Historia de Usuario
-
-**Registro de Nuevo Usuario**
-
-> Como usuario que desea crear una cuenta,  
-> quiero ingresar primero mi correo electrónico  
-> para acceder al formulario de registro completo,  
-> y completar mis datos personales sin confusiones y de manera guiada.
+## 📦 Challenges Incluidos
 
 ---
 
-## ✅ Criterios de Aceptación
+### 🔹 Challenge 01: Aumentando la Cobertura de Pruebas
 
-### 1. Pantalla Inicial (Ingreso de Email)
+**Objetivo:**  
+Transformar escenarios funcionales en pruebas automatizadas bien estructuradas aplicando el patrón **POM**.
 
-- Validación de formato de email
-- Botón "Continuar":
-  - Se habilita solo con email válido
-  - Redirige al formulario completo
+**Enfoque principal:**
 
----
+- Automatización del flujo de **registro de usuario**
+- Validación de formularios complejos
+- Implementación de:
+  - 1 Happy Path
+  - Escenarios negativos críticos
 
-### 2. Formulario de Registro
+**Qué se valida:**
 
-#### Campos obligatorios:
+- Validaciones de campos (email, teléfono, passwords)
+- Control de campos obligatorios
+- Mensajes de error
+- Flujo completo de registro exitoso
 
-- First Name
-- Last Name
-- Address
-- Email (precargado y no editable)
-- Phone
-- Gender
-- Skills
-- Country
-- Select Country (custom dropdown)
-- Date of Birth
-- Password / Confirm Password
+**Valor agregado:**
 
-#### Validaciones clave:
-
-- Email válido y no editable
-- Phone solo números
-- Passwords deben coincidir
-- Mensajes de error claros
-- Submit solo habilitado con campos completos
-- Confirmación exitosa al completar correctamente
+- Primer paso hacia automatización mantenible
+- Eliminación de código duplicado
+- Uso correcto de Page Objects
 
 ---
 
-## 🧠 Casos de Prueba (Gherkin)
+### 🔹 Challenge 02: Completar las Pruebas (Nivel Avanzado)
 
-```gherkin
-Feature: Registro de usuario
+**Objetivo:**  
+Aplicar técnicas avanzadas de automatización para validar múltiples componentes complejos de UI y comportamiento del navegador.
 
-  Scenario: Registro exitoso (Happy Path)
-    Given el usuario ingresa un email válido
-    When hace clic en continuar
-    And completa todos los campos obligatorios correctamente
-    And hace clic en Submit
-    Then el registro se completa exitosamente
+**Enfoque principal:**
 
-  Scenario: Campos obligatorios vacíos
-    Given el usuario accede al formulario
-    When hace clic en Submit sin completar campos
-    Then se muestran mensajes de error en los campos obligatorios
+Automatización de interacciones avanzadas como:
 
-  Scenario: Teléfono con formato inválido
-    Given el usuario completa el formulario
-    When ingresa letras en el campo teléfono
-    Then se muestra un error de validación
+- Manejo de alertas (Alert, Confirm, Prompt)
+- Drag and Drop (estático y dinámico)
+- Navegación con Mouse Hover
+- Manejo de iFrames anidados
+- Gestión de ventanas y pestañas (handles)
 
-  Scenario: Passwords no coinciden
-    Given el usuario completa el formulario
-    When ingresa passwords diferentes
-    Then se muestra un error indicando que no coinciden
-```
+**Componentes adicionales validados:**
 
----
+- Accordion
+- Datepicker
+- Modals
+- Progress Bar
+- Dynamic Data
+- Slider
+- Loader
 
-## 🏗️ Arquitectura del Proyecto (POM)
+**Qué se valida:**
 
-```
-/pages
-  ├── LoginPage.js
-  ├── RegisterPage.js
+- Interacciones del usuario en escenarios reales
+- Cambios dinámicos del DOM
+- Manejo correcto de contexto (frames, ventanas)
+- Sincronización y estabilidad de tests
 
-/tests
-  ├── register.spec.js
+**Valor agregado:**
 
-/utils
-  ├── testData.js
-
-/docs
-  ├── test-cases.md
-```
-
-
-## ⚙️ Instalación y Configuración
-
-### 1. Clonar repositorio
-
-```bash
-git clone <TU_REPO_URL>
-cd challenge-01-playwright
-```
-
-### 2. Instalar dependencias
-
-```bash
-npm install
-```
-
-### 3. Instalar Playwright
-
-```bash
-npx playwright install
-```
+- Uso avanzado del motor de Playwright
+- Validación de UI dinámica y asincrónica
+- Mejora en la estabilidad de la suite de pruebas
 
 ---
 
-## ▶️ Ejecución de Pruebas
+## 🎯 Enfoque General del Proyecto
 
-### Ejecutar todos los tests
+Este repositorio demuestra:
 
-```bash
-npx playwright test
-```
-
-### Ejecutar en modo UI
-
-```bash
-npx playwright test --ui
-```
-
-### Ejecutar en modo debug
-
-```bash
-npx playwright test --debug
-```
+- Evolución de pruebas básicas a automatización profesional
+- Aplicación de buenas prácticas de QA Automation
+- Diseño de pruebas mantenibles y escalables
+- Cobertura funcional sobre múltiples componentes web
 
 ---
 
-## 📊 Reportes
+## 🧠 Conceptos Clave Aplicados
 
-```bash
-npx playwright show-report
-```
+- Page Object Model (POM)
+- Separación de responsabilidades
+- Reutilización de código
+- Data-driven testing
+- Validaciones robustas (assertions)
+- Manejo de elementos dinámicos
 
+---
+
+## 📌 Conclusión
+
+Estos challenges representan un enfoque práctico de cómo un QA evoluciona hacia un **SDET**, aplicando:
+
+- Pensamiento crítico
+- Diseño de pruebas efectivo
+- Automatización de nivel profesional
+
+---
+
+## 👨‍💻 Autor
+
+QA Automation Engineer | SDET 🚀
